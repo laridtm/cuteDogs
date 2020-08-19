@@ -7,14 +7,20 @@
 //
 
 import UIKit
+import Moya
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        NetworkAdapter.request(target: .random, success: { (response) in
+            print(String(data: response.data, encoding: .utf8))
+        }, error: { (error) in
+            print(error)
+        }, failure: { (error) in
+            print(error)
+        })
     }
-
-
 }
 
