@@ -10,13 +10,17 @@ import UIKit
 import Moya
 
 class ViewController: UIViewController {
-
+    
+    var networkProvider: Networkable?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NetworkAdapter.request(target: .random, success: { (response) in
-            print(String(data: response.data, encoding: .utf8))
-        }, error: { (error) in
+        self.networkProvider?.request(target: .random, success: { (response) in
+            let randomDog = try? JSONDecoder().decode(RandomDog.self, from: response.data)
+            print(randomDog)
+            
+        }, error: { (error) in          
             print(error)
         }, failure: { (error) in
             print(error)

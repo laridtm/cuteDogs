@@ -7,6 +7,7 @@ target 'cuteDogs' do
 
   # Pods for cuteDogs
   pod 'Moya'
+  pod 'Moya-ModelMapper'
 
   target 'cuteDogsTests' do
     inherit! :search_paths

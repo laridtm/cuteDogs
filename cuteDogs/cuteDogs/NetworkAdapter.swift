@@ -9,10 +9,15 @@
 import Foundation
 import Moya
 
-struct NetworkAdapter {
-    static let provider = MoyaProvider<MyServerAPI>()
+protocol Networkable {
+    var provider: MoyaProvider<MyServerAPI> { get }
+    func request(target: MyServerAPI, success successCallback: @escaping (Response) -> Void, error errorCallback: @escaping (Swift.Error) -> Void, failure failureCallback: @escaping (MoyaError) -> Void)
+}
+
+struct NetworkAdapter: Networkable {
+    var provider = MoyaProvider<MyServerAPI>()
     
-    static func request(target: MyServerAPI, success successCallback: @escaping (Response) -> Void, error errorCallback: @escaping (Swift.Error) -> Void, failure failureCallback: @escaping (MoyaError) -> Void) {
+    func request(target: MyServerAPI, success successCallback: @escaping (Response) -> Void, error errorCallback: @escaping (Swift.Error) -> Void, failure failureCallback: @escaping (MoyaError) -> Void) {
         
         provider.request(target) { (result) in
             switch result {
