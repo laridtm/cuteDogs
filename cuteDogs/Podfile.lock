@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (5.2.2)
+  - Kingfisher (5.14.1):
+    - Kingfisher/Core (= 5.14.1)
+  - Kingfisher/Core (5.14.1)
   - ModelMapper (10.0.1):
     - ModelMapper/Core (= 10.0.1)
   - ModelMapper/Core (10.0.1)
@@ -14,22 +17,25 @@ PODS:
     - Alamofire (~> 5.0)
 
 DEPENDENCIES:
+  - Kingfisher
   - Moya
   - Moya-ModelMapper
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Kingfisher
     - ModelMapper
     - Moya
     - Moya-ModelMapper
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  Kingfisher: 8050bc6f7f68cbf3908bd04df7ccbac188f6d6d6
   ModelMapper: 0f68dd4300d0e27290c70f66492c7f795da21bcf
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   Moya-ModelMapper: e3a478500921e7299804dc1ac550f1ebf3228ade
 
-PODFILE CHECKSUM: 028b17c47d527b288553622522fe270e81763793
+PODFILE CHECKSUM: a61e943ff4d6771989ccd3d0f1fc72fb66b544f3
 
 COCOAPODS: 1.9.3
