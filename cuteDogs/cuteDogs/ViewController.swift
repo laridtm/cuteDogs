@@ -13,12 +13,19 @@ import Kingfisher
 class ViewController: UIViewController {
     
     @IBOutlet weak var dogImage: UIImageView!
+    @IBAction func newDog(_ sender: Any) {
+        self.fetchDog()
+    }
     var networkProvider: Networkable?
     var randomDog: RandomDog?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.fetchDog()
+    }
+    
+    func fetchDog() {
         self.networkProvider?.request(target: .random, success: { (response) in
             self.randomDog = try? JSONDecoder().decode(RandomDog.self, from: response.data)
             
@@ -28,7 +35,7 @@ class ViewController: UIViewController {
                 self.dogImage.kf.indicatorType = .activity
                 self.dogImage.kf.setImage(with: urlDogImage)
             }
-        }, error: { (error) in          
+        }, error: { (error) in
             print(error)
         }, failure: { (error) in
             print(error)
