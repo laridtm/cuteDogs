@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='cuteDogsUITests.xctest' tests='4' failures='1'>
+  <testsuite name='cuteDogsTests.cuteDogsTests' tests='2' failures='1'>
+    <testcase classname='cuteDogsTests.cuteDogsTests' name='testExample'>
+      <failure message='XCTAssertTrue failed'>cuteDogsTests/cuteDogsTests.swift:25</failure>
+    </testcase>
+    <testcase classname='cuteDogsTests.cuteDogsTests' name='testPerformanceExample' time='0.296'/>
+  </testsuite>
+  <testsuite name='cuteDogsUITests.cuteDogsUITests' tests='2' failures='0'>
+    <testcase classname='cuteDogsUITests.cuteDogsUITests' name='testExample' time='1.589'/>
+    <testcase classname='cuteDogsUITests.cuteDogsUITests' name='testLaunchPerformance' time='14.794'/>
+  </testsuite>
+</testsuites>
