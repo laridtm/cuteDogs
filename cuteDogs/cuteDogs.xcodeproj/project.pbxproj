@@ -11,9 +11,13 @@
 		5322BEA324ED5AED00DBEECB /* MyServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5322BEA224ED5AED00DBEECB /* MyServerAPI.swift */; };
 		5322BEA524ED6CC800DBEECB /* NetworkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5322BEA424ED6CC800DBEECB /* NetworkAdapter.swift */; };
 		5322BEA724ED718C00DBEECB /* RandomDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5322BEA624ED718C00DBEECB /* RandomDog.swift */; };
+		53A12F1424F92FAF0012C338 /* CuteDogsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A12F1324F92FAF0012C338 /* CuteDogsPresenter.swift */; };
+		53A12F1624F932450012C338 /* CuteDogsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A12F1524F932450012C338 /* CuteDogsRouter.swift */; };
+		53A12F1824F936100012C338 /* CuteDogsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A12F1724F936100012C338 /* CuteDogsInteractor.swift */; };
+		53A12F1A24F941800012C338 /* CuteDogsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A12F1924F941800012C338 /* CuteDogsContract.swift */; };
 		53B627E724ED55B80027C8EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B627E624ED55B80027C8EA /* AppDelegate.swift */; };
 		53B627E924ED55B80027C8EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B627E824ED55B80027C8EA /* SceneDelegate.swift */; };
-		53B627EB24ED55B80027C8EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B627EA24ED55B80027C8EA /* ViewController.swift */; };
+		53B627EB24ED55B80027C8EA /* CuteDogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B627EA24ED55B80027C8EA /* CuteDogsViewController.swift */; };
 		53B627EE24ED55B80027C8EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B627EC24ED55B80027C8EA /* Main.storyboard */; };
 		53B627F024ED55BC0027C8EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53B627EF24ED55BC0027C8EA /* Assets.xcassets */; };
 		53B627F324ED55BC0027C8EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B627F124ED55BC0027C8EA /* LaunchScreen.storyboard */; };
@@ -46,10 +50,14 @@
 		5322BEA224ED5AED00DBEECB /* MyServerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyServerAPI.swift; sourceTree = "<group>"; };
 		5322BEA424ED6CC800DBEECB /* NetworkAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdapter.swift; sourceTree = "<group>"; };
 		5322BEA624ED718C00DBEECB /* RandomDog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDog.swift; sourceTree = "<group>"; };
+		53A12F1324F92FAF0012C338 /* CuteDogsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteDogsPresenter.swift; sourceTree = "<group>"; };
+		53A12F1524F932450012C338 /* CuteDogsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteDogsRouter.swift; sourceTree = "<group>"; };
+		53A12F1724F936100012C338 /* CuteDogsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteDogsInteractor.swift; sourceTree = "<group>"; };
+		53A12F1924F941800012C338 /* CuteDogsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteDogsContract.swift; sourceTree = "<group>"; };
 		53B627E324ED55B80027C8EA /* cuteDogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cuteDogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B627E624ED55B80027C8EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53B627E824ED55B80027C8EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		53B627EA24ED55B80027C8EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		53B627EA24ED55B80027C8EA /* CuteDogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteDogsViewController.swift; sourceTree = "<group>"; };
 		53B627ED24ED55B80027C8EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53B627EF24ED55BC0027C8EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53B627F224ED55BC0027C8EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -137,10 +145,14 @@
 			children = (
 				53B627E624ED55B80027C8EA /* AppDelegate.swift */,
 				53B627E824ED55B80027C8EA /* SceneDelegate.swift */,
-				53B627EA24ED55B80027C8EA /* ViewController.swift */,
 				5322BEA224ED5AED00DBEECB /* MyServerAPI.swift */,
 				5322BEA424ED6CC800DBEECB /* NetworkAdapter.swift */,
 				5322BEA624ED718C00DBEECB /* RandomDog.swift */,
+				53B627EA24ED55B80027C8EA /* CuteDogsViewController.swift */,
+				53A12F1324F92FAF0012C338 /* CuteDogsPresenter.swift */,
+				53A12F1724F936100012C338 /* CuteDogsInteractor.swift */,
+				53A12F1524F932450012C338 /* CuteDogsRouter.swift */,
+				53A12F1924F941800012C338 /* CuteDogsContract.swift */,
 				53B627EC24ED55B80027C8EA /* Main.storyboard */,
 				53B627EF24ED55BC0027C8EA /* Assets.xcassets */,
 				53B627F124ED55BC0027C8EA /* LaunchScreen.storyboard */,
@@ -416,11 +428,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53B627EB24ED55B80027C8EA /* ViewController.swift in Sources */,
+				53B627EB24ED55B80027C8EA /* CuteDogsViewController.swift in Sources */,
+				53A12F1A24F941800012C338 /* CuteDogsContract.swift in Sources */,
 				53B627E724ED55B80027C8EA /* AppDelegate.swift in Sources */,
 				53B627E924ED55B80027C8EA /* SceneDelegate.swift in Sources */,
+				53A12F1424F92FAF0012C338 /* CuteDogsPresenter.swift in Sources */,
 				5322BEA324ED5AED00DBEECB /* MyServerAPI.swift in Sources */,
 				5322BEA524ED6CC800DBEECB /* NetworkAdapter.swift in Sources */,
+				53A12F1624F932450012C338 /* CuteDogsRouter.swift in Sources */,
+				53A12F1824F936100012C338 /* CuteDogsInteractor.swift in Sources */,
 				5322BEA724ED718C00DBEECB /* RandomDog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
