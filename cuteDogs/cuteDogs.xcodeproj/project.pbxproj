@@ -118,6 +118,54 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		53A12F1B24F96DFE0012C338 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5322BEA624ED718C00DBEECB /* RandomDog.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53A12F1C24F96E930012C338 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				53A12F1924F941800012C338 /* CuteDogsContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		53A12F1D24F96EA30012C338 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				53A12F1524F932450012C338 /* CuteDogsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		53A12F1E24F96EB90012C338 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				53A12F1724F936100012C338 /* CuteDogsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		53A12F1F24F96ECD0012C338 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				53A12F1324F92FAF0012C338 /* CuteDogsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		53A12F2024F96EDC0012C338 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53B627EA24ED55B80027C8EA /* CuteDogsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		53B627DA24ED55B80027C8EA = {
 			isa = PBXGroup;
 			children = (
@@ -143,16 +191,16 @@
 		53B627E524ED55B80027C8EA /* cuteDogs */ = {
 			isa = PBXGroup;
 			children = (
+				53A12F2024F96EDC0012C338 /* View */,
+				53A12F1F24F96ECD0012C338 /* Presenter */,
+				53A12F1E24F96EB90012C338 /* Interactor */,
+				53A12F1D24F96EA30012C338 /* Router */,
+				53A12F1C24F96E930012C338 /* Contract */,
+				53A12F1B24F96DFE0012C338 /* Model */,
 				53B627E624ED55B80027C8EA /* AppDelegate.swift */,
 				53B627E824ED55B80027C8EA /* SceneDelegate.swift */,
 				5322BEA224ED5AED00DBEECB /* MyServerAPI.swift */,
 				5322BEA424ED6CC800DBEECB /* NetworkAdapter.swift */,
-				5322BEA624ED718C00DBEECB /* RandomDog.swift */,
-				53B627EA24ED55B80027C8EA /* CuteDogsViewController.swift */,
-				53A12F1324F92FAF0012C338 /* CuteDogsPresenter.swift */,
-				53A12F1724F936100012C338 /* CuteDogsInteractor.swift */,
-				53A12F1524F932450012C338 /* CuteDogsRouter.swift */,
-				53A12F1924F941800012C338 /* CuteDogsContract.swift */,
 				53B627EC24ED55B80027C8EA /* Main.storyboard */,
 				53B627EF24ED55BC0027C8EA /* Assets.xcassets */,
 				53B627F124ED55BC0027C8EA /* LaunchScreen.storyboard */,
