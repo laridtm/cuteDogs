@@ -1,12 +1,12 @@
 # cuteDogs
 
-Um pequeno app para aprender algumas frameworks. 
+Um pequeno app para aprender alguns frameworks. 
 
 ## Descrição
 
 Criei um app iOS usando a [**Dog API**](https://dog.ceo/dog-api/documentation/random)
 
-Consiste em uma tela com um botão que troca a imagem para ir mostrando cachorros fofos. 
+Consiste em uma tela com um botão que troca a imagem para ir mostrando cachorrinhos fofos. 
 
 ### Arquitetura
 
@@ -20,8 +20,8 @@ Para mais informações sobre a arquitetura VIPER visite [**Começando com VIPER
 
 ### Frameworks
 
-* Comecei a estudar CI/CD e nesse ap integrei Fastlane e Bitraise, rodando os testes pelo Fastlane.
-* Aprendi automação na requisição utulizando Moya.
+* Comecei a estudar CI/CD e nesse app integrei Fastlane e Bitraise, rodando os testes pelo Fastlane.
+* Aprendi automação de requisições utilizando Moya.
 * Utilizei Kingfisher para requisição das imagens.
 
 ### Requirements
